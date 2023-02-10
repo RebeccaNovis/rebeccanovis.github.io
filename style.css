@@ -47,7 +47,7 @@
 }
 
 body{
-    padding-top: 55px;
+    padding-top: 45px;
 }
 
 h1 {
@@ -128,17 +128,16 @@ a:visited{
  }
 
 .navbar-custom{
-    background-color:#fefefe;
-    color:#211728;
+    background-color: #271534;
 }
 
 .navbar-custom .nav-link {
-    color:#c55275;
+    color:#fefefe;
     font-family: 'Open Sans';
 }
 
 .navbar-custom .nav-link:hover {
-    color:#fefefe;
+    color: #fefefe;
     background-color: #c55275;
 }
   
@@ -296,7 +295,7 @@ a:visited{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #fefefe;
+    background: #fff6f9;
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
@@ -320,6 +319,8 @@ a:visited{
   .popup p{
     color:#fefefe;
     font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .popup h1 {
     margin-top: 0;
