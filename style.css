@@ -179,6 +179,18 @@ a:visited{
     text-shadow: 1.5px 1.5px #90173b ;
   }
 
+  .centered {
+    text-align: center;
+  }
+
+  .centered a{
+    color:#c55275;
+  }
+
+  .centered a:hover{
+    color:#548ea4;
+  }
+
   .textOutline{
     border: 3px solid #e8bd54;
     padding: 6px;
