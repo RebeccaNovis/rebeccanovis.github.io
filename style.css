@@ -191,6 +191,10 @@ a:visited{
     color:#548ea4;
   }
 
+  .centered i{
+    margin: 35px 5px;
+  }
+
   .textOutline{
     border: 3px solid #e8bd54;
     padding: 6px;
