@@ -1,5 +1,4 @@
-/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
-/* image animation: https://www.demo2s.com/html-css/css-animate-to-move-image-up-and-down.html*/
+
 /* {
     box-sizing: border-box;
 }
@@ -98,6 +97,15 @@ a:visited{
     filter: drop-shadow(0px 2px 2px #383838);
 }
 
+#roundImage{
+  border: 3px solid #90173b;
+  border-radius: 50%;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 #myPhoto{
     border: 3px solid #548ea4;
     border-radius: 8px;
@@ -113,7 +121,7 @@ a:visited{
     position:relative;
    animation:glide 2s ease-in-out alternate infinite;
 }
-
+/* image animation: https://www.demo2s.com/html-css/css-animate-to-move-image-up-and-down.html*/
 @keyframes glide  {
     from {
        left:0px;
@@ -197,7 +205,8 @@ a:visited{
   }
 
   .lightBackground{
-    background: linear-gradient(142deg, rgba(254,254,254,1) 0%, rgba(255,246,249,1) 41%, rgba(252,237,221,1) 67%, rgba(255,242,211,1) 100%);
+
+    background: linear-gradient(158deg, rgba(254,254,254,1) 0%, rgba(255,213,226,1) 53%, rgba(242,200,247,1) 100%);
     color: #fefefe;
     width:100%;
   }
@@ -243,6 +252,7 @@ a:visited{
 
   .centered a{
     color:#c55275;
+    font-size: 20px;
   }
 
   .centered a:hover{
