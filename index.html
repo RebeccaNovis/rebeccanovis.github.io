@@ -14,6 +14,19 @@
     <script src="https://kit.fontawesome.com/f3177059a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <style>
+        /* Set the border color */
+    
+        .custom-toggler.navbar-toggler {
+          border-color: #fefefe;
+        }
+    
+        /* Setting the stroke to green using rgb values (0, 128, 0) */
+    
+        .custom-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100, 255, 218, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+      </style>
    
 <div class = "container-fluid lightBackground">
 <!-- <div class = "ribbon" id = "home"></div>-->
@@ -22,7 +35,7 @@
 
     <nav class="navbar navbar-custom fixed-top navbar-expand-md" >
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
