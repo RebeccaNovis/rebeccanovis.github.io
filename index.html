@@ -87,13 +87,27 @@
         <div class = 'col-md-12'>
             <h3>Skills</h3>
             <div class = 'd-flex align-items-center justify-content-center flex-wrap p-4'>
-                <img src = 'img_vid/C_Sharp.png' class = 'img-fluid' loading="lazy" alt = "An icon for C Sharp">
-                <img src = 'img_vid/Unity_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Unity">
-                <img src = 'img_vid/html_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for HTML">
-                <img src = 'img_vid/css_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for CSS">
-                <img src = 'img_vid/javascript_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for JavaScript">
-                <img src = 'img_vid/photoshop_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Adobe Photoshop">
-                <img src = 'img_vid/Premiere_Pro_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Adobe Premiere Pro">
+                <span class = "tt" data-bs-placement = "top" title = "C#">
+                   <img src = 'img_vid/C_Sharp.png' class = 'img-fluid' loading="lazy" alt = "An icon for C Sharp"> 
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "Unity">
+                    <img src = 'img_vid/Unity_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Unity"> 
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "HTML">
+                    <img src = 'img_vid/html_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for HTML">
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "CSS">
+                    <img src = 'img_vid/css_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for CSS">
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "JavaScript">
+                    <img src = 'img_vid/javascript_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for JavaScript">
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "Adobe Photoshop">
+                    <img src = 'img_vid/photoshop_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Adobe Photoshop">
+                </span>
+                <span class = "tt" data-bs-placement = "top" title = "Adobe Premiere Pro">
+                    <img src = 'img_vid/Premiere_Pro_icon.png' class = 'img-fluid' loading="lazy" alt = "An icon for Adobe Premiere Pro">
+                </span>
             </div>
         </div>
     </div>
@@ -320,5 +334,11 @@
         </div>
     </div>    
 </div>
+<script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+    })
+</script>
 </body>
 </html>
