@@ -362,11 +362,9 @@ a:visited{
   }
   .popup h3{
     color: #fefefe;
-    text-align: left;
+    text-align: center;
     font-family: "Playfair Display";
     font-size: 25px;
-    margin-left: 30px;
-    margin-right: 10px;
     margin-top: 10px;
   }
   .popup ul{
@@ -376,13 +374,22 @@ a:visited{
     margin-left: 30px;
     margin-right: 10px;
   }
+
+  .popup .artifactSkills{
+    color:#fefefe;
+    text-align: center;
+    font-size: 20px;
+  }
+
   .popup iframe{
     display: block;
   margin-left:auto;
   margin-right: auto;
   }
   .popup img {
-    margin: 15px 10px;
+    margin: 15px;
+    margin-left:auto;
+    margin-right: auto;
     border: 2px solid #548ea4;
     border-radius: 2px;
     filter: drop-shadow(0px 2px 2px #000000)
