@@ -301,6 +301,7 @@ a:visited{
   /* Scale up the box */
  .portOutline:hover {
     transform: scale(1.05, 1.05);
+    cursor: pointer;
   }
 
 
@@ -312,21 +313,22 @@ a:visited{
 
 /* popup */
 .overlay {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #fff6f9;
-    transition: opacity 500ms;
+    background: rgb(255, 246, 249, 0.8);
+   /* transition: opacity 500ms;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0; */
     overflow-y: scroll;
   }
-  .overlay:target {
+  /*.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
+  } */
   
   .popup {
     margin: 70px auto;
