@@ -1,4 +1,3 @@
-
 /* {
     box-sizing: border-box;
 }
@@ -14,7 +13,8 @@
 }
  
 @media only screen and (min-width: 768px) {
-    /* For desktop: */ /*
+    /* For desktop: */
+/*
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -42,376 +42,387 @@
 
 /** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
 .overflow {
-    overflow-x:auto;
+  overflow-x: auto;
 }
 
-body{
-    padding-top: 45px;
+body {
+  padding-top: 45px;
 }
 
 h1 {
-    text-align: center;
-    color: #fefefe;
-    font-family: "Playfair Display";
-    font-size: 45px;
+  text-align: center;
+  color: #fefefe;
+  font-family: "Playfair Display";
+  font-size: 45px;
 }
 
-h2{
-    text-align: center;
-    font-family: "Playfair Display";
-    font-size: 35px;
-    color: #fefefe;
+h2 {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 35px;
+  color: #fefefe;
 }
 
-h3{
-    text-align: center;
-    font-weight: bold;
-    font-family: "Playfair Display";
-    font-size: 25px;
-    color: #fefefe; 
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  color: #fefefe;
 }
 
-p{
-    font-family: "Open Sans";
-    color: #fefefe;
+p {
+  font-family: "Open Sans";
+  color: #fefefe;
 }
 
-a{
-    color:#c55275;
-    text-decoration: none;
+a {
+  color: #c55275;
+  text-decoration: none;
 }
 
-a:hover{
-    color:#548ea4;
-    text-decoration: none;
+a:hover {
+  color: #548ea4;
+  text-decoration: none;
 }
 
-a:visited{
-    color:#548ea4;
-    text-decoration: underline;
+a:visited {
+  color: #548ea4;
+  text-decoration: underline;
 }
 
-#thumbnail{
-    border: 1px solid #211728;
-    border-radius: 8px;
-    filter: drop-shadow(0px 2px 2px #383838);
+#thumbnail {
+  border: 1px solid #211728;
+  border-radius: 8px;
+  filter: drop-shadow(0px 2px 2px #383838);
 }
 
-#roundImage{
+#roundImage {
   border: 3px solid #90173b;
   border-radius: 50%;
   display: block;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
 }
 
-#myPhoto{
-    border: 3px solid #548ea4;
-    border-radius: 8px;
-    filter: drop-shadow(6px 6px 8px #000000);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7px;
-    margin-top: 5px;
-    height: 200px;
-    width: auto;
-    top:0;
-    
-    position:relative;
-   animation:glide 2s ease-in-out alternate infinite;
-}
-/* image animation: https://www.demo2s.com/html-css/css-animate-to-move-image-up-and-down.html*/
-@keyframes glide  {
-    from {
-       left:0px;
-       top:10px;
-    }
-    
-    to {
-       left:0px;
-       top: -5px;
-    }
- 
- }
+#myPhoto {
+  border: 3px solid #548ea4;
+  border-radius: 8px;
+  filter: drop-shadow(6px 6px 8px #000000);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  height: 200px;
+  width: auto;
+  top: 0;
 
-.navbar-custom{
-    background-color: #271534;
+  position: relative;
+  animation: glide 2s ease-in-out alternate infinite;
+}
+
+/* image animation: https://www.demo2s.com/html-css/css-animate-to-move-image-up-and-down.html*/
+@keyframes glide {
+  from {
+    left: 0px;
+    top: 10px;
+  }
+
+  to {
+    left: 0px;
+    top: -5px;
+  }
+
+}
+
+.navbar-custom {
+  background-color: #271534;
 }
 
 .navbar-custom .nav-link {
-    color:#fefefe;
-    font-family: 'Open Sans';
+  color: #fefefe;
+  font-family: 'Open Sans';
 }
 
 .navbar-custom .nav-link:hover {
-    color: #c55275;
+  color: #c55275;
 }
 
 /* Set the border color */
-    
+
 .custom-toggler.navbar-toggler {
-    border-color: rgb(254, 254, 254);
+  border-color: rgb(254, 254, 254);
 }
-    
+
 /* Setting the stroke to white using rgb values (254, 254, 254) */
-    
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 254, 254, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-  
-  hr.lightLine{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    color:#fefefe;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(254, 254, 254, 0), rgba(254, 254, 254, 0.75), rgba(254, 254, 254, 0));
-  }
 
-  hr.darkLine{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    color:#c55275;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(144, 23, 59, 0), rgba(144, 23, 59, 0.75), rgba(144, 23, 59, 0));
-  }
+hr.lightLine {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #fefefe;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(254, 254, 254, 0), rgba(254, 254, 254, 0.75), rgba(254, 254, 254, 0));
+}
+
+hr.darkLine {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #c55275;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(144, 23, 59, 0), rgba(144, 23, 59, 0.75), rgba(144, 23, 59, 0));
+}
 
 /* Flaired edges, by Tomas Theunissen https://css-tricks.com/examples/hrs/*/
 
-  hr.topLine {
-    overflow: visible; /* For IE */
-    height: 30px;
-    border-style: solid;
-    border-color: #c55275;
-    opacity: 100%;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 0px;
-  }
-  hr.topLine:before { /* Not really supposed to work, but does */
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: #c55275;
-    opacity: 100%;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-  
-    margin-left: auto;
-    margin-right: auto;
-  }
+hr.topLine {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #c55275;
+  opacity: 100%;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
 
-  .lightBackground{
+hr.topLine:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #c55275;
+  opacity: 100%;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 
-    background: linear-gradient(158deg, rgba(254,254,254,1) 0%, rgba(255,213,226,1) 53%, rgba(242,200,247,1) 100%);
-    color: #fefefe;
-    width:100%;
-  }
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .lightBackground h2{
-    margin: 15px;
-  }
+.lightBackground {
 
-  .darkBackground{
-    background: linear-gradient(142deg, rgba(33,23,40,1) 0%, rgba(33,15,60,1) 43%, rgba(18,31,65,1) 65%, rgba(4,37,50,1) 100%);
-    color: #fefefe;
-    width:100%; 
-  }
+  background: linear-gradient(158deg, rgba(254, 254, 254, 1) 0%, rgba(255, 213, 226, 1) 53%, rgba(242, 200, 247, 1) 100%);
+  color: #fefefe;
+  width: 100%;
+}
 
-  .darkBackground h2{
-    margin: 15px;
-  }
+.lightBackground h2 {
+  margin: 15px;
+}
 
-  .darkText{
-    color:#271932;
-  }
+.darkBackground {
+  background: linear-gradient(142deg, rgba(33, 23, 40, 1) 0%, rgba(33, 15, 60, 1) 43%, rgba(18, 31, 65, 1) 65%, rgba(4, 37, 50, 1) 100%);
+  color: #fefefe;
+  width: 100%;
+}
 
-  .portText{
-    color:#211728;
-    text-align: center;
-    font-size: 20px;
-  }
+.darkBackground h2 {
+  margin: 15px;
+}
 
-  .pinkHeader{
-    color:#c55275;
-    font-weight: bold;
-    margin: 45px 0px 15px;
-    text-shadow: 0px 1.5px #90173b ;
-  }
+.darkText {
+  color: #271932;
+}
 
-  .portfolioHeader {
-    color:#c55275;
-  }
+.portText {
+  color: #211728;
+  text-align: center;
+  font-size: 20px;
+}
 
-  .centered {
-    text-align: center;
-  }
+.pinkHeader {
+  color: #c55275;
+  font-weight: bold;
+  margin: 45px 0px 15px;
+  text-shadow: 0px 1.5px #90173b;
+}
 
-  .centered a{
-    color:#c55275;
-    font-size: 20px;
-  }
+.portfolioHeader {
+  color: #c55275;
+}
 
-  .centered a:hover{
-    color:#548ea4;
-  }
+.centered {
+  text-align: center;
+}
 
-  .centered i{
-    margin: 35px 5px;
-  }
+.centered a {
+  color: #c55275;
+  font-size: 20px;
+}
 
-  .textOutline{
-    border: 3px solid #e8bd54;
-    padding: 6px;
-    border-radius: 5px;
-    background-color: #211728;
-    filter: drop-shadow(6px 6px 8px #000000);
-    text-align: center;
-    margin:15px;
-    font-size: 20px;
-  }
+.centered a:hover {
+  color: #548ea4;
+}
 
-  .portOutline{
-    position: relative;
-    display: inline-block;
-    border: 3px solid #e8bd54;
-    border-radius: 5px;
-    background-color: #fefefe;
-    margin: 20px 10px 30px;
-    padding: 10px;
-    filter: drop-shadow(0px 2px 3px #383838);
-    transition: all 0.3s ease-in-out;
-  }
+.centered i {
+  margin: 35px 5px;
+}
 
-  /* Scale up the box */
- .portOutline:hover {
-    transform: scale(1.05, 1.05);
-    cursor: pointer;
-  }
+.textOutline {
+  border: 3px solid #e8bd54;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #211728;
+  filter: drop-shadow(6px 6px 8px #000000);
+  text-align: center;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.portOutline {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #e8bd54;
+  border-radius: 5px;
+  background-color: #fefefe;
+  margin: 20px 10px 30px;
+  padding: 10px;
+  filter: drop-shadow(0px 2px 3px #383838);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Scale up the box */
+.portOutline:hover {
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
 
 
-  .ribbon {
-    height: 12px;
-    width:100%;
-    background-color: #c55275;
+.ribbon {
+  height: 12px;
+  width: 100%;
+  background-color: #c55275;
 }
 
 /* popup */
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(255, 246, 249, 0.8);
-   /* transition: opacity 500ms;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255, 246, 249, 0.8);
+  /* transition: opacity 500ms;
     visibility: hidden;
     opacity: 0; */
-    overflow-y: scroll;
-  }
-  /*.overlay:target {
+  overflow-y: scroll;
+}
+
+/*.overlay:target {
     visibility: visible;
     opacity: 1;
   } */
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: linear-gradient(142deg, rgba(33,23,40,1) 0%, rgba(33,15,60,1) 43%, rgba(18,31,65,1) 65%, rgba(4,37,50,1) 100%);
-    border-radius: 5px;
-    width: 80%;
-    position: relative;
-    text-align: center;
-    transition: all 5s ease-in-out;
-  }
-  .popup p{
-    color:#fefefe;
-    font-family: "Open Sans";
-    text-align: left;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-  .popup h1 {
-    margin-top: 0;
-    font-size: 45px;
-    text-align: center;
-    color: #fefefe;
-    font-family: "Playfair Display";
 
-  }
-  .popup h2{
-    color: #fefefe;
-    text-align: center;
-    font-family: "Playfair Display";
-    font-size: 30px;
-  }
-  .popup h3{
-    color: #fefefe;
-    text-align: center;
-    font-family: "Playfair Display";
-    font-size: 25px;
-    margin-top: 10px;
-  }
-  .popup ul{
-    color:#fefefe;
-    text-align: left;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-right: 10px;
-  }
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: linear-gradient(142deg, rgba(33, 23, 40, 1) 0%, rgba(33, 15, 60, 1) 43%, rgba(18, 31, 65, 1) 65%, rgba(4, 37, 50, 1) 100%);
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  transition: all 5s ease-in-out;
+}
 
-  .popup .artifactSkills{
-    color:#fefefe;
-    text-align: center;
-    font-size: 20px;
-  }
+.popup p {
+  color: #fefefe;
+  font-family: "Open Sans";
+  text-align: left;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
 
-  .popup iframe{
-    display: block;
-  margin-left:auto;
+.popup h1 {
+  margin-top: 0;
+  font-size: 45px;
+  text-align: center;
+  color: #fefefe;
+  font-family: "Playfair Display";
+
+}
+
+.popup h2 {
+  color: #fefefe;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 30px;
+}
+
+.popup h3 {
+  color: #fefefe;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.popup ul {
+  color: #fefefe;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.popup .artifactSkills {
+  color: #fefefe;
+  text-align: center;
+  font-size: 20px;
+}
+
+.popup iframe {
+  display: block;
+  margin-left: auto;
   margin-right: auto;
-  }
-  .popup img {
-    margin: 15px;
-    margin-left:auto;
-    margin-right: auto;
-    border: 2px solid #548ea4;
-    border-radius: 2px;
-    filter: drop-shadow(0px 2px 2px #000000)
-  }
-  .popup .close {
-    transition: all 200ms;
-    font-family: "Open Sans";
-    border: 2px solid #c55275;
-    border-radius: 30px;
-    padding: 5px 10px;
-    margin: 10px;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #c55275;
-  }
-  .popup .close:hover {
-    color: #548ea4;
-    border: 2px solid #548ea4;
-  }
+}
 
+.popup img {
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #548ea4;
+  border-radius: 2px;
+  filter: drop-shadow(0px 2px 2px #000000)
+}
 
+.popup .close {
+  transition: all 200ms;
+  font-family: "Open Sans";
+  border: 2px solid #c55275;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #c55275;
+}
+
+.popup .close:hover {
+  color: #548ea4;
+  border: 2px solid #548ea4;
+}
