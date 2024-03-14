@@ -351,7 +351,7 @@ hr.topLine:before {
   font-family: "Open Sans";
   text-align: left;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-right: 10px;
   margin-top: 10px;
 }
@@ -388,8 +388,28 @@ hr.topLine:before {
   margin-right: 10px;
 }
 
+.popup a {
+  color: #c55275;
+  text-decoration: none;
+}
+
+.popup a:hover {
+  color: #548ea4;
+  text-decoration: none;
+}
+
+.popup a:visited {
+  color: #548ea4;
+  text-decoration: underline;
+}
+
 .popup .artifactSkills {
   color: #fefefe;
+  text-align: center;
+  font-size: 20px;
+}
+
+.popup .centered-link {
   text-align: center;
   font-size: 20px;
 }
