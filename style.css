@@ -106,6 +106,16 @@ a:visited {
   margin-bottom: 20px;
 }
 
+.img-container{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.icon-img{
+  max-height: 100px;
+  width: auto;
+}
+
 #myPhoto {
   border: 3px solid #548ea4;
   border-radius: 8px;
@@ -115,9 +125,8 @@ a:visited {
   margin-right: auto;
   margin-bottom: 7px;
   margin-top: 5px;
-  height: 200px;
+  height: 250px;
   width: auto;
-  top: 0;
 
   position: relative;
   animation: glide 2s ease-in-out alternate infinite;
@@ -132,9 +141,27 @@ a:visited {
 
   to {
     left: 0px;
-    top: -5px;
+    top: -10px;
   }
 
+}
+
+@media (max-width: 991px) {
+
+
+/* image animation: https://www.demo2s.com/html-css/css-animate-to-move-image-up-and-down.html*/
+@keyframes glide {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+
+  to {
+    left: 0px;
+    top: -10px;
+  }
+
+}
 }
 
 .navbar-custom {
@@ -445,4 +472,9 @@ hr.topLine:before {
 .popup .close:hover {
   color: #548ea4;
   border: 2px solid #548ea4;
+}
+
+p.img-description{
+  font-style: italic;
+  font-size: 18px;
 }

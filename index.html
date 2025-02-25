@@ -58,12 +58,12 @@
                 <hr class="topLine">
             </div>
         </div>
-        <div class="row">
+       <!-- <div class="row">
             <div class="col-md-12">
                 <img src="img_vid/headshotCropped.jpg" id="roundImage" class="img-fluid"
                     alt="A headshot of Rebecca Novis from the shoulders up in which she is smiling at the camera.">
             </div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -77,19 +77,20 @@
 
         <div class='row'>
             <div class='col-lg-8'>
-                <p class="textOutline">Hi! I'm Rebecca Novis, a student at Boise State University in the Games,
+                <div class="textOutline">
+                 <p>Hi! I'm Rebecca Novis, a student at Boise State University in the Games,
                     Interactive Media, and Mobile Technology (<a href="https://www.boisestate.edu/gimm/">GIMM</a>)
-                    major.
-                    I have experience working in Unity for a variety of projects, including 2D, 3D, and VR projects.
-                    I’m also proficient in some Adobe products, including Photoshop and Premiere Pro. I love working on
-                    projects that require me to think creatively and that push my skill set.
-                    I am most interested in game development, but I am also enthusicatic about web development.
+                    major, expected to graduate May 2025.
                 </p>
-                <br>
+                <p>
+                    I am an experienced Full Stack Web Developer with a passion for frontend development. I specialize 
+                    in building responsive, user-friendly, and robust web applications by leveraging my expertise in both frontend and backend technologies. In addition to web development, I also have a background in game development, working with both Unity and Unreal Engine to bring interactive experiences to life. I thrive on tackling creative challenges and continuously pushing my skills to new heights, no matter the project.
+                </p>   
+                </div>
             </div>
-            <div class='col-lg-4'>
-                <img src='img_vid/senior_photo_cropped_reflection.jpg' id="myPhoto" class="img-fluid" loading="lazy"
-                    alt="A different headshot of Rebecca Novis from the shoulders up. She is smiling at the camera and leaning her head aganst a wall.">
+            <div class='col-lg-4 img-container'>
+                <img src='img_vid/Rebecca_Headshot_cropped2.png' id="myPhoto" class="img-fluid" loading="lazy"
+                    alt="A headshot of Rebecca Novis from the shoulders up. She is smiling at the camera.">
             </div>
         </div>
         <hr class="lightLine">
@@ -98,27 +99,39 @@
                 <h3>Skills</h3>
                 <div class='d-flex align-items-center justify-content-center flex-wrap p-4'>
                     <span class="tt" data-bs-placement="top" title="C#">
-                        <img src='img_vid/C_Sharp.png' class='img-fluid' loading="lazy" alt="An icon for C Sharp">
+                        <img src='img_vid/C_Sharp.png' class='img-fluid icon-img' loading="lazy" alt="An icon for C Sharp">
                     </span>
                     <span class="tt" data-bs-placement="top" title="Unity">
-                        <img src='img_vid/Unity_icon.png' class='img-fluid' loading="lazy" alt="An icon for Unity">
+                        <img src='img_vid/Unity_icon.png' class='img-fluid icon-img' loading="lazy" alt="An icon for Unity">
+                    </span>
+                    <span class="tt" data-bs-placement="top" title="Unreal Engine">
+                        <img src='img_vid/unreal-icon-light.png' class='img-fluid icon-img' loading="lazy"
+                            alt="An icon for UnrealEngine"> 
+                    </span>
+                    <span class="tt" data-bs-placement="top" title="React.js">
+                        <img src='img_vid/react-icon.png' class='img-fluid icon-img' loading="lazy"
+                            alt="An icon for React.js">
+                    </span>
+                    <span class="tt" data-bs-placement="top" title="Node.js">
+                        <img src='img_vid/node-js-icon.png' class='img-fluid icon-img' loading="lazy"
+                            alt="An icon for Node.js">
+                    </span>
+                    <span class="tt" data-bs-placement="top" title="MySQL">
+                        <img src='img_vid/MySQL-icon.png' class='img-fluid icon-img' loading="lazy"
+                            alt="An icon for MySQL">
                     </span>
                     <span class="tt" data-bs-placement="top" title="HTML">
-                        <img src='img_vid/html_icon.png' class='img-fluid' loading="lazy" alt="An icon for HTML">
+                        <img src='img_vid/html_icon.png' class='img-fluid icon-img' loading="lazy" alt="An icon for HTML">
                     </span>
                     <span class="tt" data-bs-placement="top" title="CSS">
-                        <img src='img_vid/css_icon.png' class='img-fluid' loading="lazy" alt="An icon for CSS">
+                        <img src='img_vid/css_icon.png' class='img-fluid icon-img' loading="lazy" alt="An icon for CSS">
                     </span>
                     <span class="tt" data-bs-placement="top" title="JavaScript">
-                        <img src='img_vid/javascript_icon.png' class='img-fluid' loading="lazy"
+                        <img src='img_vid/javascript_icon.png' class='img-fluid icon-img' loading="lazy"
                             alt="An icon for JavaScript">
                     </span>
-                    <span class="tt" data-bs-placement="top" title="Adobe Photoshop">
-                        <img src='img_vid/photoshop_icon.png' class='img-fluid' loading="lazy"
-                            alt="An icon for Adobe Photoshop">
-                    </span>
                     <span class="tt" data-bs-placement="top" title="Adobe Premiere Pro">
-                        <img src='img_vid/Premiere_Pro_icon.png' class='img-fluid' loading="lazy"
+                        <img src='img_vid/Premiere_Pro_icon.png' class='img-fluid icon-img' loading="lazy"
                             alt="An icon for Adobe Premiere Pro">
                     </span>
                 </div>
@@ -151,6 +164,17 @@
                     </div>
                 </div>
             </div> -->
+
+            <div class='col-md-4'>
+                <div class="button" id="TVWaterBtn">
+                    <div class="portOutline">
+                        <h3 class="darkText">Treasure Valley Water Hub</h3>
+                        <p class="portText">Website</p>
+                        <img src='img_vid/TVWater_Thumbnail.jpg' class="img-fluid" id="thumbnail" loading="lazy"
+                            alt="A screenshot of the home page of the Treasure Valley Water Hub website.">
+                    </div>
+                </div>
+            </div>
 
             <div class='col-md-4'>
                 <div class="button" id="SasticeBtn">
@@ -500,7 +524,7 @@
 
             <div class='row'>
                 <div class='col-md-6 embed-responsive embed-responsive-16by9'>
-                    <iframe src="https://youtu.be/Ka3ZtLHEVjg" title="YouTube video player" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/Ka3ZtLHEVjg?si=sy9Mux6xiu0XfkB1" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
@@ -770,7 +794,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://youtu.be/-2qppDXAzPo" title="YouTube video player" frameborder="0"
+                        <iframe src="https://www.youtube.com/embed/-2qppDXAzPo?si=bpihWFmnY2pLFG5M" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
@@ -848,6 +872,94 @@
                     <div class="col-md-12">
                         <a class="close" id="closeReservation">Close Project</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containter-fluid overlay" id="TVWaterPopup">
+        <div class="containter-fluid popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Treasure Valley Water Hub</h1>
+                    <h2>GIMM Works Dev Team</h2>
+                    <h2>Summer 2024</h2>
+                    <hr class="lightLine">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/JRfklX5mkW4?si=WCMwREMIx2QauS9Z" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    
+                    <br>
+                    <h3>Skills Used</h3>
+                    <p class="artifactSkills">React.js, JavaScript, HTML, CSS, MySQL, Node.js, Leaflet, D3.js</p>
+                </div>
+            </div>
+            <hr class="lightLine">
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        While working as a Full Stack Web Developer for the GIMM Works Dev Team, I collaborated with a client to create the Treasure Valley Water Hub website, a centralized resource hub focused on water-related information in Idaho. My role involved working on both the front-end and back-end aspects of the website, collaborating closely with another full-stack developer and the UX/UI designer on our team.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-5'>
+                    <img src="img_vid/TVWater_old_new.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot from the Figma used to design the website, and a screenshot from the homepage of the website.">
+                        <p class="img-description">An early design concept for the home page on the left. The final design of the home page after several rounds of client feedback on the right.</p>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        Our team was given about three months to complete the initial development, followed by additional work to finalize the project handoff. Using the wireframes designed in Figma by our UX/UI designer, the other developer and I translated the design into a functional and visually engaging website. We maintained consistent communication with the client through weekly meetings, ensuring that their feedback was incorporated into the website's design and functionality with quick turnaround times.
+                    </p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-7'>
+                    <p>
+                        Throughout the project, I utilized HTML, CSS, and JavaScript, along with several JavaScript libraries and frameworks, including React.js, Node.js, Leaflet and React-Leaflet, D3.js, Swiper.js, and Simple-Statistics. Although React-Leaflet-Heatmap-Layer and Kriging.js were initially implemented to build a predictive groundwater level map using the Kriging model, these features were ultimately removed when the client determined that the model’s predictions were not accurate enough. This process required significant trial and error to achieve a working prototype before the client’s decision.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img_vid/kriging_heatmap.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot from an old iteration of the website that used a kriging heatmap.">
+                        <p class="img-description">An old iteration of the groundwater map page with scrapped functionality, such as a heatmap of groundwater levels based on the kriging model that utilized react-leaflet-heatmap-layer, and kriging.js.</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="col-md-5">
+                    <img src="img_vid/TVWater_groundwater_map.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot of the Groundwater Map page">
+                </div>
+                <div class='col-md-7'>
+                    <p>
+                        I also developed multiple data visualizations inspired by examples from the React Graph Gallery, including a line graph and pie chart that were featured in the final website. Additional work was done on a scatter plot, a standard bar graph, and a stacked bar graph. On the back-end, I imported several data tables into the project’s MySQL database using MySQL Workbench and crafted MySQL queries to efficiently integrate this data into the website's features.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        This project enhanced my skills in full-stack development, agile communication with clients, and data visualization, while demonstrating my ability to adapt quickly to client feedback and project requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="close" id="closeTVWater">Close Project</a>
                 </div>
             </div>
         </div>
@@ -954,6 +1066,7 @@
             var TLIModal = document.getElementById("TLIPopup");
             var SasticeModal = document.getElementById("SasticePopup");
             var ReservationModal = document.getElementById("ReservationPopup");
+            var TVWaterModal = document.getElementById("TVWaterPopup");
 
             // Get the button that opens the modal
             var starBayButton = document.getElementById("starBayBtn");
@@ -961,6 +1074,7 @@
             var TLIButton = document.getElementById("TLIBtn");
             var SasticeButton = document.getElementById("SasticeBtn");
             var ReservationButton = document.getElementById("ReservationBtn");
+            var TVWaterButton = document.getElementById("TVWaterBtn");
 
             // Get the elements that closes the modal
             var closeStarBayBtn = document.getElementById("closeStarBay");
@@ -968,6 +1082,7 @@
             var closeTLIBtn = document.getElementById("closeTLI");
             var closeSasticeBtn = document.getElementById("closeSastice");
             var closeReservationBtn = document.getElementById("closeReservation");
+            var closeTVWaterBtn = document.getElementById("closeTVWater");
 
             // When the user clicks the button, open the modal 
             starBayButton.onclick = function () {
@@ -988,6 +1103,10 @@
 
             ReservationButton.onclick = function () {
                 ReservationModal.style.display = "block";
+            }
+
+            TVWaterButton.onclick = function () {
+                TVWaterModal.style.display = "block";
             }
 
             // When the user clicks on <span> (x), close the modal
@@ -1011,6 +1130,10 @@
                 ReservationModal.style.display = "none";
             }
 
+            closeTVWaterBtn.onclick = function () {
+                TVWaterModal.style.display = "none";
+            }
+
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
                 if (event.target == starBayModal) {
@@ -1023,6 +1146,8 @@
                     SasticeModal.style.display = "none";
                 } else if (event.target == ReservationModal) {
                     ReservationModal.style.display = "none";
+                } else if (event.target == TVWaterModal) {
+                    TVWaterModal.style.display = "none";
                 }
             }  
         </script>
