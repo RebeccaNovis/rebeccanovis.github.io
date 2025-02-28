@@ -166,6 +166,17 @@
             </div> -->
 
             <div class='col-md-4'>
+                <div class="button" id="SnSBtn">
+                    <div class="portOutline">
+                        <h3 class="darkText">Slurgin N' Snop</h3>
+                        <p class="portText">Co-op Video Game</p>
+                        <img src='img_vid/SnS_Thumbnail.png' class="img-fluid" id="thumbnail" loading="lazy"
+                            alt="A screenshot of Slurgin N' Snop">
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-4'>
                 <div class="button" id="TVWaterBtn">
                     <div class="portOutline">
                         <h3 class="darkText">Treasure Valley Water Hub</h3>
@@ -900,6 +911,7 @@
                     <br>
                     <h3>Skills Used</h3>
                     <p class="artifactSkills">React.js, JavaScript, HTML, CSS, MySQL, Node.js, Leaflet, D3.js</p>
+                    <p class="artifactSkills">Communication, Teamwork, Problem-Solving, Critical Thinking</p>
                 </div>
             </div>
             <hr class="lightLine">
@@ -960,6 +972,79 @@
             <div class="row">
                 <div class="col-md-12">
                     <a class="close" id="closeTVWater">Close Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containter-fluid overlay" id="SnSPopup">
+        <div class="containter-fluid popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Slurgin N' Snop</h1>
+                    <h2>Fall 2024</h2>
+                    <hr class="lightLine">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/O5pLWZ_4cEs?si=Ri4TVcSHIZkRkZbL" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    
+                    <br>
+                    <h3>Skills Used</h3>
+                    <p class="artifactSkills">Unreal Engine 5, Blueprints, Level Design, Puzzle Design</p>
+                    <p class="artifactSkills">Communication, Teamwork, Problem-Solving, Critical Thinking</p>
+                </div>
+            </div>
+            <hr class="lightLine">
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        Slurgin N’ Snop is a two-player 3D puzzle platformer developed in the Unreal Engine, about a snail that wishes to become a slug, a slug that wishes to become a snail, and their journey to self-acceptance. I worked on this game alongside 3 other students as one of our class assignments. Each of us took on a primary role, but we also helped each other out when needed. I primarily worked on the level design and puzzle design. However, I also worked on mechanics such as the checkpoint/respawn system, and the destroyable walls with vines. 
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-5'>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img_vid/SnS_level_ideation2.jpg" class="img-fluid" loading="lazy"
+                            alt="A photo of a piece of paper with a potential layout of the level sketched out.">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img_vid/SnS_level_ideation1.jpg" class="img-fluid" loading="lazy"
+                            alt="A photo of a piece of paper with potential ideas written out.">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        The four of us took inspiration from the game It Takes Two, and how each player has their own unique set of skills, and are only able to get through the levels by working together and using both of their own unique mechanics to help the other player through. As the level designer, I first needed to know what each of the player characters was going to be capable of. So, my group did some brainstorming on the unique mechanics for Slurgin the slug and Snop the snail. While we went through many ideas, we eventually decided that the primary mechanics of Slurgin would be the ability to jump, and the ability to shoot slime.As for Snop, he would be able to climb over objects and roll down slopes to destroy objects and back his shell into enemies. Additionally, Slurgin would be killed by copper but immune to salt, while Snop would be killed by salt but immune to copper. 
+                    </p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-7'>
+                    <p>
+                        With this decided upon, I was able to begin iterating on the level design, and I sketched out a few different iterations of what the level could look like. I knew from my own experience playing puzzle games like Portal, that it helps to slowly introduce new mechanics and how to use those mechanics to your players. You don’t want to throw too many new things at them at once, otherwise they could get overwhelmed. So, I tried to build out the level in a way that would slowly introduce the players to the mechanics, and show them what they could do with them. While I am not totally satisfied with how the level turned out, I think it was a very helpful learning experience for me.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img_vid/Slurgin_and_Snop_Level_Design.png" class="img-fluid" loading="lazy"
+                        alt="A late stage level layout drawn in Procreate.">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="close" id="closeSnS">Close Project</a>
                 </div>
             </div>
         </div>
@@ -1067,6 +1152,7 @@
             var SasticeModal = document.getElementById("SasticePopup");
             var ReservationModal = document.getElementById("ReservationPopup");
             var TVWaterModal = document.getElementById("TVWaterPopup");
+            var SnSModal = document.getElementById("SnSPopup");
 
             // Get the button that opens the modal
             var starBayButton = document.getElementById("starBayBtn");
@@ -1075,6 +1161,7 @@
             var SasticeButton = document.getElementById("SasticeBtn");
             var ReservationButton = document.getElementById("ReservationBtn");
             var TVWaterButton = document.getElementById("TVWaterBtn");
+            var SnSButton = document.getElementById("SnSBtn");
 
             // Get the elements that closes the modal
             var closeStarBayBtn = document.getElementById("closeStarBay");
@@ -1083,6 +1170,7 @@
             var closeSasticeBtn = document.getElementById("closeSastice");
             var closeReservationBtn = document.getElementById("closeReservation");
             var closeTVWaterBtn = document.getElementById("closeTVWater");
+            var closeSnSBtn = document.getElementById("closeSnS");
 
             // When the user clicks the button, open the modal 
             starBayButton.onclick = function () {
@@ -1109,6 +1197,9 @@
                 TVWaterModal.style.display = "block";
             }
 
+            SnSButton.onclick = function () {
+                SnSModal.style.display = "block";
+            }
             // When the user clicks on <span> (x), close the modal
             closeStarBayBtn.onclick = function () {
                 starBayModal.style.display = "none";
@@ -1133,6 +1224,9 @@
             closeTVWaterBtn.onclick = function () {
                 TVWaterModal.style.display = "none";
             }
+            closeSnSBtn.onclick = function () {
+                SnSModal.style.display = "none";
+            }
 
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
@@ -1148,6 +1242,8 @@
                     ReservationModal.style.display = "none";
                 } else if (event.target == TVWaterModal) {
                     TVWaterModal.style.display = "none";
+                } else if (event.target == SnSModal) {
+                    SnSModal.style.display = "none";
                 }
             }  
         </script>
