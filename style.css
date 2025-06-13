@@ -291,6 +291,7 @@ hr.topLine:before {
 
 .centered {
   text-align: center;
+  align-items: center;
 }
 
 .centered a {
@@ -304,6 +305,12 @@ hr.topLine:before {
 
 .centered i {
   margin: 35px 5px;
+}
+
+.centered iframe{
+  height: 17.75vi;
+  width: 30vi;
+  margin-bottom: 20px;
 }
 
 .textOutline {
