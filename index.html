@@ -169,17 +169,6 @@
 
         <div class='row'>
 
-            <!--<div class='col-md-4'>
-                <div class="button" id="AdriftBtn">
-                    <div class="portOutline">
-                        <h3 class="darkText">ADRIFT</h3>
-                        <p class="portText">VR Game (in progress)</p>
-                        <img src='img_vid/Reservations-Thumbnail.png' class="img-fluid" id="thumbnail" 
-                            alt="A screenshot of the home page of the BSU Games Center Reservation website prototype">
-                    </div>
-                </div>
-            </div> -->
-
             <div class='col-md-4'>
                 <div class="button" id="LightPuzBtn">
                     <div class="portOutline">
@@ -231,6 +220,17 @@
                         <p class="portText">Website</p>
                         <img src='img_vid/TVWater_Thumbnail.jpg' class="img-fluid" id="thumbnail"
                             alt="A screenshot of the home page of the Treasure Valley Water Hub website.">
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-4'>
+                <div class="button" id="AdriftBtn">
+                    <div class="portOutline">
+                        <h3 class="darkText">ADRIFT</h3>
+                        <p class="portText">VR Game</p>
+                        <img src='img_vid/ADRIFT_Thumbnail.png' class="img-fluid" id="thumbnail"
+                            alt="A screenshot of the home page of the BSU Games Center Reservation website prototype">
                     </div>
                 </div>
             </div>
@@ -1388,6 +1388,70 @@
         </div>
     </div>
 
+    <div class="containter-fluid overlay" id="AdriftPopup">
+        <div class="containter-fluid popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Light Puzzles</h1>
+                    <h2>Ongoing</h2>
+                    <h3>Game Developer</h3>
+                    <hr class="lightLine">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/5sO1aHBjBP4?si=AI3JxmOjhct_-5-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="centered-link"><a href="https://github.com/RebeccaNovis/Escape_Room" target="_blank"
+                            rel="noopener noreferrer">View the code on Github <i
+                                class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                    <br>
+                    <h3>Skills Used</h3>
+                    <p class="artifactSkills">Unity, C#, Puzzle Design, Maya, Roadkill, ChucK, Audacity, Procreate</p>
+                </div>
+            </div>
+            <hr class="lightLine">
+            <div class='row'>
+                <div class="col-md-12">
+                    <p>Congrats, you have just been hired at the Advanced Dimensional Research Institution for Forward
+                        Thinking, or ADRIFT for short! At your new job, you are expected to perform testing in ADRIFT’s
+                        various labs, testing the institutions discoveries. As you do this, you will need to examine the
+                        things around you, break down and understand clues, and test your ingenuity in order to meet
+                        ADRIFT’s high standards, and hopefully figure out what exactly is going on in their labs.</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>ADRIFT is a VR puzzle game inspired by escape rooms, with sci-fi theming. I developed ADRIFT
+                        entirely by myself over the course of several semesters. By doing so, I learned how to make a
+                        video game entirely on my own from start to finish, including ideation, programming, 3D modeling
+                        and texturing, and music and sound design.
+                    </p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>Aside from the base VR character and controls, I developed each part of the game myself. I
+                        developed the game in Unity using C#, including the VFX which I created using Unity’s VFX graph.
+                        I also created the models in Maya, unwrapped the models using Roadkill, then textured them in
+                        Procreate. For the audio in the game, I created the music in ChucK, and recorded the sound
+                        effects myself and edited them in Audacity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="close" id="closeAdrift">Close Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="containter-fluid overlay" id="LightPuzPopup">
         <div class="containter-fluid popup">
             <div class="row">
@@ -1504,11 +1568,16 @@
                         Some future improvements I have planned include:
                     </p>
                     <ul>
-                        <li>A new color extractor mechanic that lets you remove a color from a laser (or cube?) to use elsewhere. For example, could have a Cyan laser that you have to split into a blue and a green laser.</li>
-                        <li>Improve how mirrors and other objects are rotated so there isn’t as much of a struggle to get the exact right angle. </li>
-                        <li>Add more/better vfx and unique models to improve presentation and make level design more clear.</li>
+                        <li>A new color extractor mechanic that lets you remove a color from a laser (or cube?) to use
+                            elsewhere. For example, could have a Cyan laser that you have to split into a blue and a
+                            green laser.</li>
+                        <li>Improve how mirrors and other objects are rotated so there isn’t as much of a struggle to
+                            get the exact right angle. </li>
+                        <li>Add more/better vfx and unique models to improve presentation and make level design more
+                            clear.</li>
                         <li>Add sound effects for additional feedback.</li>
-                        <li>Improve grab object script to make sure objects can’t phase through walls/floor and also make sure held objects don’t interfere with player’s movement/physics.</li>
+                        <li>Improve grab object script to make sure objects can’t phase through walls/floor and also
+                            make sure held objects don’t interfere with player’s movement/physics.</li>
                         <li>More puzzles!</li>
                         <li>Play testing!</li>
                     </ul>
@@ -1628,6 +1697,7 @@
         var IdaGemModal = document.getElementById("IdaGemPopup");
         var BreathModal = document.getElementById("BreathPopup");
         var LightPuzModal = document.getElementById("LightPuzPopup");
+        var AdriftModal = document.getElementById("AdriftPopup");
 
         // Get the button that opens the modal
         var starBayButton = document.getElementById("starBayBtn");
@@ -1640,6 +1710,7 @@
         var IdaGemButton = document.getElementById("IdaGemBtn");
         var BreathButton = document.getElementById("BreathBtn");
         var LightPuzButton = document.getElementById("LightPuzBtn");
+        var AdriftButton = document.getElementById("AdriftBtn");
 
         // Get the elements that closes the modal
         var closeStarBayBtn = document.getElementById("closeStarBay");
@@ -1652,6 +1723,7 @@
         var closeIdaGemBtn = document.getElementById("closeIdaGem");
         var closeBreathBtn = document.getElementById("closeBreath");
         var closeLightPuz = document.getElementById("closeLightPuz");
+        var closeAdrift = document.getElementById("closeAdrift");
 
         // When the user clicks the button, open the modal 
         starBayButton.onclick = function () {
@@ -1690,6 +1762,9 @@
         LightPuzButton.onclick = function () {
             LightPuzModal.style.display = "block";
         }
+        AdriftButton.onclick = function () {
+            AdriftModal.style.display = "block";
+        }
 
         // When the user clicks on <span> (x), close the modal
         closeStarBayBtn.onclick = function () {
@@ -1727,6 +1802,9 @@
         closeLightPuz.onclick = function () {
             LightPuzModal.style.display = "none";
         }
+        closeAdrift.onclick = function () {
+            AdriftModal.style.display = "none";
+        }
 
 
         // When the user clicks anywhere outside of the modal, close it
@@ -1751,6 +1829,8 @@
                 BreathModal.style.display = "none";
             } else if (event.target == LightPuzModal) {
                 LightPuzModal.style.display = "none";
+            } else if (event.target == AdriftModal) {
+                AdriftModal.style.display = "none";
             }
         }  
     </script>
