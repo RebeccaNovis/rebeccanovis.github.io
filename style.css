@@ -114,6 +114,7 @@ a:visited {
 .icon-img{
   max-height: 100px;
   width: auto;
+  margin: 5px;
 }
 
 #myPhoto {
