@@ -170,6 +170,17 @@
         <div class='row'>
 
             <div class='col-md-4'>
+                <div class="button" id="GIMMAlumBtn">
+                    <div class="portOutline">
+                        <h3 class="darkText">GIMM Alumni</h3>
+                        <p class="portText">Website</p>
+                        <img src='img_vid/GIMMAlum_Thumbnail.png' class="img-fluid" id="thumbnail"
+                            alt="A screenshot of the homepage of the GIMM Alumni website.">
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-4'>
                 <div class="button" id="LightPuzBtn">
                     <div class="portOutline">
                         <h3 class="darkText">Light Puzzles</h3>
@@ -1594,6 +1605,188 @@
         </div>
     </div>
 
+    <div class="containter-fluid overlay" id="GIMMAlumPopup">
+        <div class="containter-fluid popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>GIMM Alumni</h1>
+                    <h2>Fall 2024 - Spring 2025</h2>
+                    <h3>Frontend Developer</h3>
+                    <hr class="lightLine">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="img_vid/gimmAlum_home.png" class="img-fluid" loading="lazy"
+                            alt="A screenshot of the GIMM Alumni home page">
+                    </div>
+                    <p class="centered-link"><a href="https://gimmalumni.com/" target="_blank"
+                            rel="noopener noreferrer">Visit GIMM Alumni<i
+                                class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                    <br>
+                    <h3>Skills Used</h3>
+                    <p class="artifactSkills">React.js, JavaScript, HTML, CSS, Node.js, Leflet, Bootstrap, Figma</p>
+                    <p class="artifactSkills">Communication, Teamwork, Problem-Solving, Critical Thinking</p>
+                </div>
+            </div>
+            <hr class="lightLine">
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        The GIMM Alumni website is a website created by GIMM students, for GIMM students. This project
+                        was worked on by a team of students across two semesters as part of our senior capstone. Our
+                        professor, Karen Doty, was our client, and asked us to create a website to help GIMM students
+                        network with GIMM alumni.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-5'>
+                    <img src="img_vid/gimmAlum_showcase.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot of the Senior Showcase page.">
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        The main thing she asked for was an interactive map, where users could see where alumni were
+                        working across the world, and get information about them. She also asked that we create a page
+                        to view alumni’s senior showcase demo reels, as well as a page for students and staff to post
+                        job listings for students. For example, if a student was looking for people to voice act in an
+                        animation, or if a professor was looking for a student developer to help with a project, they
+                        could make a job post on the website.
+
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        The website also has an admin side, where GIMM faculty are in charge of approving or denying
+                        submissions to the job postings page and the GIMM Alumni, to ensure that nothing inappropriate
+                        gets posted.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-5'>
+                    <p>
+                        Our team was split into three groups, with some overlap: frontend developers, backend
+                        developers, and UI/UX designers and testers. I was primarily a frontend developer, while also
+                        helping with some UI design and setting up some of the backend. Each frontend developer was
+                        given a page of the website to build according to the Figma design created by the UI/UX
+                        designers. I was in charge of creating the interactive alumni map, which also acts as the home
+                        page of the website. Additionally, I worked with the UI/UX team when designing the final
+                        iteration of the home/map page, and I set up the EC2 instance for the website on AWS.
+                    </p>
+                    <p>
+                        Our team also made sure to make pull requests as we finished portions of the website, and so
+                        someone else on the team always had to approve pull requests before they could be merged into
+                        main. While the team leads primarily handled reviewing pull requests, myself and some others
+                        would also occasionally handle reviewing pull requests.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img_vid/GIMMAlum_firstMap.png" class="img-fluid" loading="lazy"
+                                alt="A screenshot of the first design of the map page on Figma.">
+                            <p class="img-description">The first design of the mape page made on Figma.</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="img_vid/GIMMAlum_secondMap.png" class="img-fluid" loading="lazy"
+                                alt="A screenshot of the second design of the map page on Figma.">
+                            <p class="img-description">The second iteration of the mape page made on Figma.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img_vid/GIMMAlum_thirdMap.png" class="img-fluid" loading="lazy"
+                                alt="A screenshot of the third design of the map page on Figma.">
+                            <p class="img-description">The third iteration of the mape page made on Figma.</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="img_vid/GIMMAlum_FinalMap.png" class="img-fluid" loading="lazy"
+                                alt="A screenshot of the final design of the map page on Figma.">
+                            <p class="img-description">The final iteration of the mape page made on Figma, which I
+                                worked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-5">
+                    <img src="img_vid/gimmAlum_code.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot of code used on the Alumni Map page.">
+                    <p class="img-description">Code from AlumniMap.js. Checks session storage for cached alumni survey
+                        responses. If found, it
+                        uses them; if not, it fetches them from the server and stores the approved ones in state.</p>
+                </div>
+                <div class='col-md-7'>
+                    <p>
+                        Early into the project, our team decided to use a React based framework along with React
+                        Bootstrap. In order to create the interactive map, I used the Leaflet/React Leaflet library. I
+                        structured the page by creating an AlumniMap page, and then creating two components: an
+                        InteractiveMap component and a BriefInfoCard component. The information about the alumni
+                        displayed on the page was collected from the website’s survey page, which was sent out to GIMM
+                        alumni. The information submitted by the alumni is fetched from the server to be used on the
+                        Alumni Map page. Only submissions that have been approved by an admin are shown on the page.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <p>
+                        The user is given a variety of ways to filter the listed alumni, such as by the job field they
+                        currently work in, the type of job they have (remote, hybrid, etc.), the country and state they
+                        are in, and just a search bar. The country and state search makes use of the country-state-city
+                        npm package.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img_vid/gimmAlum_filteringCode.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot of the code used to filter the alumni.">
+                    <p class="img-description">Code from AlumniMap.js. This UseEffect runs whenever any of the filter
+                        values or the alumni list changes. It filters the alumni data, then updates the filteredAlumni
+                        state with the matching results.</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-7">
+                    <img src="img_vid/gimmAlum_getCoordsCode.png" class="img-fluid" loading="lazy"
+                        alt="A screenshot of the code used to get the needed info for the map markers.">
+                    <p class="img-description">Code from InteractiveMap.js. The getCoordinates function finds the
+                        latitude and longitude of each alum based on their country and state. locationCounts uses the
+                        data returned by getCoordinates to count how many alumni are located at each unique location,
+                        then builds an object using that info.</p>
+                </div>
+                <div class='col-md-5'>
+                    <p>
+                        I had originally planned for there to be markers for cities, states, and countries, but I ended
+                        up running out of time, and only incorporated the state and country map markers. While trying to
+                        incorporate city markers, I ran into an issue where the name of a city can be used in many
+                        different states, and so I had to find a way to effectively find the specific city and its
+                        coordinates. If I was able to return to this project, that is probably the first thing I would
+                        figure out and implement.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        I had a lot of fun working on this project. I found that this project helped me refine my
+                        frontend web development skills, as well as my ability to work on a team.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="close" id="closeGIMMAlum">Close Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <div class="containter-fluid overlay" id="CinderellaPopup">
         <div class="containter-fluid popup">
             <div class="row">
@@ -1704,7 +1897,8 @@
             { modalId: "IdaGemPopup", btnId: "IdaGemBtn" },
             { modalId: "BreathPopup", btnId: "BreathBtn" },
             { modalId: "LightPuzPopup", btnId: "LightPuzBtn" },
-            { modalId: "AdriftPopup", btnId: "AdriftBtn" }
+            { modalId: "AdriftPopup", btnId: "AdriftBtn" },
+            { modalId: "GIMMAlumPopup", btnId: "GIMMAlumBtn" }
         ];
 
         // Get each of the close buttons that closes the modal
