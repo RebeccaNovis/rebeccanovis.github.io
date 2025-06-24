@@ -1402,7 +1402,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://www.youtube.com/embed/5sO1aHBjBP4?si=AI3JxmOjhct_-5-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/5sO1aHBjBP4?si=AI3JxmOjhct_-5-0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <p class="centered-link"><a href="https://github.com/RebeccaNovis/Escape_Room" target="_blank"
                             rel="noopener noreferrer">View the code on Github <i
@@ -1686,152 +1689,59 @@
             new bootstrap.Tooltip(t)
         })
 
-        // Get the modal
-        var starBayModal = document.getElementById("StarBayPopup");
-        var PoTModal = document.getElementById("PoTPopup");
-        var TLIModal = document.getElementById("TLIPopup");
-        var SasticeModal = document.getElementById("SasticePopup");
-        var ReservationModal = document.getElementById("ReservationPopup");
-        var TVWaterModal = document.getElementById("TVWaterPopup");
-        var SnSModal = document.getElementById("SnSPopup");
-        var IdaGemModal = document.getElementById("IdaGemPopup");
-        var BreathModal = document.getElementById("BreathPopup");
-        var LightPuzModal = document.getElementById("LightPuzPopup");
-        var AdriftModal = document.getElementById("AdriftPopup");
+        //modals array used to close the modals
+        const modals = [];
 
-        // Get the button that opens the modal
-        var starBayButton = document.getElementById("starBayBtn");
-        var PoTButton = document.getElementById("PoTBtn");
-        var TLIButton = document.getElementById("TLIBtn");
-        var SasticeButton = document.getElementById("SasticeBtn");
-        var ReservationButton = document.getElementById("ReservationBtn");
-        var TVWaterButton = document.getElementById("TVWaterBtn");
-        var SnSButton = document.getElementById("SnSBtn");
-        var IdaGemButton = document.getElementById("IdaGemBtn");
-        var BreathButton = document.getElementById("BreathBtn");
-        var LightPuzButton = document.getElementById("LightPuzBtn");
-        var AdriftButton = document.getElementById("AdriftBtn");
+        //each of the modals and their coressponding buttons that open them
+        const modalMap = [
+            { modalId: "StarBayPopup", btnId: "starBayBtn" },
+            { modalId: "PoTPopup", btnId: "PoTBtn" },
+            { modalId: "TLIPopup", btnId: "TLIBtn" },
+            { modalId: "SasticePopup", btnId: "SasticeBtn" },
+            { modalId: "ReservationPopup", btnId: "ReservationBtn" },
+            { modalId: "TVWaterPopup", btnId: "TVWaterBtn" },
+            { modalId: "SnSPopup", btnId: "SnSBtn" },
+            { modalId: "IdaGemPopup", btnId: "IdaGemBtn" },
+            { modalId: "BreathPopup", btnId: "BreathBtn" },
+            { modalId: "LightPuzPopup", btnId: "LightPuzBtn" },
+            { modalId: "AdriftPopup", btnId: "AdriftBtn" }
+        ];
 
-        // Get the elements that closes the modal
-        var closeStarBayBtn = document.getElementById("closeStarBay");
-        var closePoTBtn = document.getElementById("closePoT");
-        var closeTLIBtn = document.getElementById("closeTLI");
-        var closeSasticeBtn = document.getElementById("closeSastice");
-        var closeReservationBtn = document.getElementById("closeReservation");
-        var closeTVWaterBtn = document.getElementById("closeTVWater");
-        var closeSnSBtn = document.getElementById("closeSnS");
-        var closeIdaGemBtn = document.getElementById("closeIdaGem");
-        var closeBreathBtn = document.getElementById("closeBreath");
-        var closeLightPuz = document.getElementById("closeLightPuz");
-        var closeAdrift = document.getElementById("closeAdrift");
+        // Get each of the close buttons that closes the modal
+        var closeBtn = document.getElementsByClassName("close");
 
-        // When the user clicks the button, open the modal 
-        starBayButton.onclick = function () {
-            starBayModal.style.display = "block";
-        }
+        //get each modal and open button. add the modal to the modals array, and add an onlick event for each button.
+        modalMap.forEach(({ modalId, btnId }) => {
+            const modal = document.getElementById(modalId);
+            const button = document.getElementById(btnId);
+            if (modal && button) {
+                modals.push(modal);
 
-        PoTButton.onclick = function () {
-            PoTModal.style.display = "block";
-        }
+                button.onclick = () => {
+                    modal.style.display = "block";
+                };
+            }
+        });
 
-        TLIButton.onclick = function () {
-            TLIModal.style.display = "block";
-        }
 
-        SasticeButton.onclick = function () {
-            SasticeModal.style.display = "block";
-        }
-
-        ReservationButton.onclick = function () {
-            ReservationModal.style.display = "block";
-        }
-
-        TVWaterButton.onclick = function () {
-            TVWaterModal.style.display = "block";
-        }
-
-        SnSButton.onclick = function () {
-            SnSModal.style.display = "block";
-        }
-        IdaGemButton.onclick = function () {
-            IdaGemModal.style.display = "block";
-        }
-        BreathButton.onclick = function () {
-            BreathModal.style.display = "block";
-        }
-        LightPuzButton.onclick = function () {
-            LightPuzModal.style.display = "block";
-        }
-        AdriftButton.onclick = function () {
-            AdriftModal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        closeStarBayBtn.onclick = function () {
-            starBayModal.style.display = "none";
-        }
-
-        closePoTBtn.onclick = function () {
-            PoTModal.style.display = "none";
-        }
-
-        closeTLIBtn.onclick = function () {
-            TLIModal.style.display = "none";
-        }
-
-        closeSasticeBtn.onclick = function () {
-            SasticeModal.style.display = "none";
-        }
-
-        closeReservationBtn.onclick = function () {
-            ReservationModal.style.display = "none";
-        }
-
-        closeTVWaterBtn.onclick = function () {
-            TVWaterModal.style.display = "none";
-        }
-        closeSnSBtn.onclick = function () {
-            SnSModal.style.display = "none";
-        }
-        closeIdaGemBtn.onclick = function () {
-            IdaGemModal.style.display = "none";
-        }
-        closeBreathBtn.onclick = function () {
-            BreathModal.style.display = "none";
-        }
-        closeLightPuz.onclick = function () {
-            LightPuzModal.style.display = "none";
-        }
-        closeAdrift.onclick = function () {
-            AdriftModal.style.display = "none";
-        }
+        // When the user clicks on "close project" button, close the modal
+        Array.from(closeBtn).forEach(btn => {
+            btn.onclick = function () {
+                modals.forEach(m => {
+                    m.style.display = "none";
+                });
+            };
+        });
 
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
-            if (event.target == starBayModal) {
-                starBayModal.style.display = "none";
-            } else if (event.target == PoTModal) {
-                PoTModal.style.display = "none";
-            } else if (event.target == TLIModal) {
-                TLIModal.style.display = "none";
-            } else if (event.target == SasticeModal) {
-                SasticeModal.style.display = "none";
-            } else if (event.target == ReservationModal) {
-                ReservationModal.style.display = "none";
-            } else if (event.target == TVWaterModal) {
-                TVWaterModal.style.display = "none";
-            } else if (event.target == SnSModal) {
-                SnSModal.style.display = "none";
-            } else if (event.target == IdaGemModal) {
-                IdaGemModal.style.display = "none";
-            } else if (event.target == BreathModal) {
-                BreathModal.style.display = "none";
-            } else if (event.target == LightPuzModal) {
-                LightPuzModal.style.display = "none";
-            } else if (event.target == AdriftModal) {
-                AdriftModal.style.display = "none";
-            }
+            modals.forEach(m => {
+                if (event.target == m) {
+                    m.style.display = "none";
+                }
+            });
+
         }  
     </script>
 </body>
