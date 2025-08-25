@@ -283,7 +283,7 @@ hr.topLine:before {
   color: #c55275;
   font-weight: bold;
   margin: 45px 0px 15px;
-  text-shadow: 0px 1.5px #90173b;
+  text-shadow: 0px 1px #90173b;
 }
 
 .portfolioHeader {
@@ -308,9 +308,14 @@ hr.topLine:before {
   margin: 35px 5px;
 }
 
-.centered iframe{
+iframe{
   height: 17.75vi;
-  width: 30vi;
+  width: 30vi;  
+}
+
+.centered iframe{
+  min-height: 237px;
+  min-width: 400px;
   margin-bottom: 20px;
 }
 
@@ -450,6 +455,8 @@ hr.topLine:before {
 }
 
 .popup iframe {
+  min-height: 189px;
+  min-width: 320px;
   display: block;
   margin-left: auto;
   margin-right: auto;
