@@ -170,6 +170,17 @@
         <div class='row'>
 
             <div class='col-md-4'>
+                <div class="button" id="DrawbridgeBtn">
+                    <div class="portOutline">
+                        <h3 class="darkText">Drawbridge-DX</h3>
+                        <p class="portText">NPM Authentication Package</p>
+                        <img src='img_vid/Drawbridge_Thumbnail.jpg' class="img-fluid" id="thumbnail"
+                            alt="A screenshot of Drawbridge-DX on npmjs.com.">
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-4'>
                 <div class="button" id="GIMMAlumBtn">
                     <div class="portOutline">
                         <h3 class="darkText">GIMM Alumni</h3>
@@ -1941,6 +1952,161 @@
         </div>
     </div>
 
+    <div class="containter-fluid overlay" id="DrawbridgePopup">
+        <div class="containter-fluid popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Drawbridge-DX</h1>
+                    <h2>Spring 2025</h2>
+                    <h3>Backend Developer</h3>
+                    <hr class="lightLine">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="img_vid/Drawbridge-DX_flow.png" class="img-fluid main-photo" loading="lazy"
+                            alt="A picture of Drawbridge-DX's flow.">
+                    </div>
+                    <br>
+                    <p class="centered-link"><a href="https://github.com/DippyDucks/Drawbridge-DX" target="_blank"
+                            rel="noopener noreferrer">View the code on GitHub <i
+                                class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                    <p class="centered-link"><a href="https://github.com/DippyDucks/Drawbridge-DX" target="_blank"
+                            rel="noopener noreferrer">View the package on npm <i
+                                class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                    <h3>Skills Used</h3>
+                    <p class="artifactSkills">Node.js, JavaScript, Google API, OAuth Strategy design pattern,
+                        Object-Relational Mapping, integration testing, Jest, GitHub actions </p>
+                    <p class="artifactSkills">Communication, Teamwork, Problem-Solving, Critical Thinking</p>
+                </div>
+            </div>
+            <hr class="lightLine">
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        Drawbridge-DX is an npm authentication package built using the Strategy design pattern. The
+                        package currently provides login, register, and logout methods for a username/password strategy
+                        and a Google strategy. The package was built modularly, so more strategies can be easily created
+                        and added in the future. Additionally, it uses Object Relational Mapping (ORM) to allow the
+                        package to be usable with any type of database.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        This package was created by myself and JC Ho over the course of the Spring 2025 semester for an
+                        independent study class focused on server side programming. At the start of the semester JC and
+                        I went over the topics that we were interested in learning with our professor, then together we
+                        came up with a semester-long project that incorporated most of the topics we wanted to learn.
+                        Some of these topics includes authentication and authorization and the basics of login systems,
+                        Continuous Integration and Continuous Deployment (CI / CD), ORM, and design patterns.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        We started the project by researching- like what npm configuration package and what design
+                        pattern to use- in order to ensure that we had a good foundation to begin building our package.
+                        JC and I decided to use the config npm configuration package, considering its support for
+                        different environments. For the design pattern we primarily looked into the Strategy design
+                        pattern and the Mediator design pattern. We ultimately decided on the Strategy design pattern.
+                        We thought that Strategy would work best since we would be working with many similar methods
+                        that use the same information to do similar things, just with slightly varied executions, and
+                        this is what the Strategy design pattern excels in.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        Between using the config npm package and the Strategy design pattern, Drawbridge-DX would offer
+                        the user a flexible set up, by allowing them to easily turn on/off each authentication strategy.
+                        So, if the user only wanted to utilize a local authentication strategy like username and
+                        passwords on their platform, they could turn off the Google authentication strategy, which would
+                        delegate the authentication to OAuth. The user could also choose to only allow the Google
+                        strategy on their platform, or offer both Google and usernames/passwords.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        As a team, we also made sure to use an ORM to offer the user even more flexibility. By working
+                        with an ORM, we would ensure that the user would be able to use Drawbridge-DX with any database.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        I took on the task of creating the Google authentication strategy. Initially it was rather
+                        challenging, but the more I researched and learned about Google OAuth and how it worked,
+                        development became much smoother.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        JC and I also worked together to create the database structure to ensure that both strategies
+                        would work with it. We decided to use a MySQL database during development, but we wanted the
+                        user to have the flexibility to use any database of their choosing, so we researched Object
+                        Relational Mapping (ORM) and refactored the project to use it.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        During development we also learned how to implement integration tests. We used the Jest unit
+                        testing framework and Github actions. The original plan was to implement unit tests, but during
+                        development I could not figure out how to get the tests to run properly without connecting to
+                        the Google API, which was an external system. If I was to return to this project, I would want
+                        to do more research to see if it is possible to isolate the methods enough to run proper unit
+                        tests.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        As it is, it took a decent amount of troubleshooting to figure out how to set up the integration
+                        tests with the Google API. What ended up working was using the Google OAuth 2.0 Playground to
+                        create a refresh token. During the testing phase, the refresh token could then be exchanged for
+                        an access token and id token.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+                        I found working on Drawbridge-DX to be instrumental in honing my skills with backend development
+                        and server-side programming. I experienced many challenges and a lot of failure during
+                        development, but through each failure I learned more and more. Through persistence, hard work,
+                        and collaboration, I was able to fill the gaps in my knowledge, and end up with a solid product
+                        that can easily be added upon later.
+                    </p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="close">Close Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <div class="containter-fluid overlay" id="CinderellaPopup">
         <div class="containter-fluid popup">
             <div class="row">
@@ -2053,7 +2219,8 @@
             { modalId: "LightPuzPopup", btnId: "LightPuzBtn" },
             { modalId: "AdriftPopup", btnId: "AdriftBtn" },
             { modalId: "GIMMAlumPopup", btnId: "GIMMAlumBtn" },
-            { modalId: "GreenGlowPopup", btnId: "GreenGlowBtn" }
+            { modalId: "GreenGlowPopup", btnId: "GreenGlowBtn" },
+            { modalId: "DrawbridgePopup", btnId: "DrawbridgeBtn" }
         ];
 
         // Get each of the close buttons that closes the modal
